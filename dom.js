@@ -1,40 +1,29 @@
-const addNewMovie=document.getElementsByClassName("movie-item")
-console.log(addNewMovie);
-addNewMovie[0].style.color="red"
+/* -------------------------------------------------------------------------- */
+//!                                  DOM INTRO                                */
+/* -------------------------------------------------------------------------- */
+// DOM dökümanların stillerinin, yapısının, içeriğinin erişilmesine ve güncellenmesine olanak sağlayan, dilden bağımsız bir arabirimdir.
+// DOM HTML Api olark bize bir kod bloğu sunuyor. Bu sayede HTML, CSS e JS ile erişip manipule edebiliyorum.
+// HTML ve CSS ile statik değişiklikler yapabiliyor, ama JS ile dinamiklik sağlıyor.
 
-for (let i=0;i<addNewMovie.length;i++){
-    console.log(addNewMovie[i].textContent);
-}
+// HTML DOM API (Application Programming Interface), web sayfalarındaki HTML ve XML belgelerini programlama dilleri (genellikle JavaScript) aracılığıyla dinamik olarak manipüle etmenizi sağlayan bir dizi yöntem ve özellikler topluluğudur.
 
-const arrayMovies=[...addNewMovie]
-console.log(arrayMovies);
+// Bu API, HTML belgelerini ve belgelerdeki elementleri temsil eden bir nesne modeline erişim sağlar ve bu modelde değişiklikler yapmanıza olanak tanır.
 
-arrayMovies.forEach((item)=>item.style.color="blue")
-
-
-
-const listItems=document.getElementsByTagName("li")
-console.log(listItems);
-
-const h2Ler = document.getElementsByTagName("h2")
-console.log(h2Ler);
-
-const h2lerArray =[...h2Ler]
-console.log(h2lerArray);
-
-h2lerArray.forEach((item) => console.log(item.textContent))
-
-document.querySelector("#tenet").style.backgroundColor="cadetblue"
-document.querySelector(".add-new").style.backgroundColor="pink"
-document.querySelector(".movie-item").style.backgroundColor="yellow"
-document.querySelector(".movie-item").style.backgroundColor="red"
+//?DOM elemenlarının hepsi Object haline gelir.
+//? Bu sayede Tüm HTML elemanlarının propertylerini  - lenght
+//? Bu sayede Tüm HTML elemanlarının metodlarını 
+//? Bu sayede Tüm HTML elemanlarının olayları alabilirsiniz.
 
 
-document.querySelector("#movie-ul #avatar").style.backgroundColor="crimson"
+/* -------------------------------------------------------------------------- */
+//!                           Belgeye Erişim Yöntemleri                       */
+/* -------------------------------------------------------------------------- */
+// document.getElementById(id): Belirtilen id'ye sahip olan ilk elemente erişir.
+// document.getElementsByClassName(className): Belirtilen sınıfa (class) sahip tüm elementleri bir HTMLCollection olarak döner.
+// document.getElementsByTagName(tagName): Belirtilen etiket adına sahip tüm elementleri bir HTMLCollection olarak döner.
+// document.querySelector(selector): Belirtilen CSS seçicisine (selector) uyan ilk elemente erişir.
+// document.querySelectorAll(selector): Belirtilen CSS seçicisine (selector) uyan tüm elementleri bir NodeList olarak döner.
 
-
-const movies = document.querySelectorAll(".movie-item")
-console.log(movies);
-
-const arrMovies = [...movies]
-console.log(arrMovies);
+//*===========================================
+//*            GETELEMENTBYID()
+//*===========================================
