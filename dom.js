@@ -53,3 +53,31 @@ inception.innerHTML=`<h3 style="background-color:gray">Blacklist</h3>
 
 const addNewMovie=document.getElementsByClassName("movie-item")
 console.log(addNewMovie)
+
+//Bu yapının içine girme yöntemleri
+//1-For yapısı
+for (let i=0;i<addNewMovie.length;i++){
+    console.log(addNewMovie[i].textContent)
+}
+// console.clear()
+//2-Spread operatoru ile arraye çevirelim
+const arrayMovies=[...addNewMovie]
+console.log(arrayMovies)
+// Arraye çevirmemizin nedeni array metodlarından(map,filter,reduce,foreach) faydalanmak
+arrayMovies.forEach((item)=>item.style.color="blue")
+
+//3-Array.from(arrayLike)
+console.log("Array.from",Array.from(arrayMovies))
+console.clear()
+//*===========================================
+//*          GETELEMENTSBYTAGNAME()
+//*===========================================
+const listItems=document.getElementsByTagName("li")
+console.log(listItems)
+
+const h2Ler=document.getElementsByTagName("h2")
+console.log(h2Ler)
+
+const h2lerArray=[...h2Ler]
+console.log(h2lerArray)
+h2lerArray.forEach((item)=> console.log(item.textContent))
