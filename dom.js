@@ -81,3 +81,34 @@ console.log(h2Ler)
 const h2lerArray=[...h2Ler]
 console.log(h2lerArray)
 h2lerArray.forEach((item)=> console.log(item.textContent))
+
+
+//* ========================================
+//*              QUERYSELECTOR()
+//* ========================================
+//? querySelector ve querySelectorAll  Her iki yöntem de CSS seçicilerini kullanarak elemanları seçmenizi sağlar.
+
+// Css de classlara . ile erişim sağlarız
+// Css de id lere # ile erişim sağlarız.
+// Css de etikerlere(tag) direk erişim sağlarız
+
+// document.querySelector(selector) yöntemi, belirtilen CSS seçicisine uyan ilk elementi döner.
+
+document.querySelector("#tenet").style.backgroundColor="cadetblue"
+document.querySelector(".add-new").style.backgroundColor="pink"
+document.querySelector(".movie-item").style.backgroundColor="yellow"
+document.querySelector(".movie-item").style.backgroundColor="orange"
+
+// Diğer bir önemli özelliği
+// CSS yapısı gibi seçim yapmayı sağlar
+document.querySelector("#movie-ul #avatar").style.backgroundColor="crimson"
+
+
+//* ========================================
+//*              QUERYSELECTORALL()
+//* ========================================
+const movies=document.querySelectorAll(".movie-item")
+console.log(movies)
+
+const arrMovies=[...movies]
+console.log(arrMovies)
