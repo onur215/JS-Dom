@@ -104,7 +104,7 @@ document.querySelector("#movie-ul #avatar").style.backgroundColor="crimson"
 
 
 //* ========================================
-//*              QUERYSELECTORALL()
+//*               QUERYSELECTORALL()
 //* ========================================
 const movies=document.querySelectorAll(".movie-item")
 console.log(movies)
