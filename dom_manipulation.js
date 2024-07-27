@@ -25,3 +25,25 @@ movieUl.removeChild(matrix)
 //SetAttribute
 const movieInput = document.querySelector("#movie-input")
 movieInput.setAttribute("placeholder","Enter a movie name")
+
+/* ---------------------------------------------- */
+
+// Class ekleme
+const avatar = document.getElementById("avatar")
+avatar.classList.add("highlight")
+
+const inters = document.getElementById("interstellar")
+inters.classList.remove("interstellar")
+
+// Bir element bir classa sahip mi kontrolü
+//contains => içeriyor mu - True False
+
+const check = inters.classList.contains("interstellar")
+console.log(check);
+
+const check1 = avatar.classList.contains("highlight")
+console.log(check1);
+
+if (avatar.classList.contains("highlight")) {
+    avatar.style.fontSize = "3rem"
+}
