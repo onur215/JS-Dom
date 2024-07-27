@@ -35,7 +35,7 @@ const moviesHeader=document.getElementById("moviesHeader")
 
 const inception=document.getElementById("inception")
 console.log(inception)
-// camelcase ile ifa ediliyor
+// camelcase ile ifade ediliyor
 inception.style.backgroundColor="lime"
 
 inception.innerText="God Father"
