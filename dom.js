@@ -27,7 +27,6 @@
 //*===========================================
 //*            GETELEMENTBYID()
 //*===========================================
-
 document.getElementById("moviesHeader").style.color="red"
 document.getElementById("moviesHeader").style.fontWeight="bolder"
 document.getElementById("moviesHeader").style.fontSize="2.5rem"
