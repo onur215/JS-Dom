@@ -53,3 +53,8 @@ console.log(deneme)
 //* 3- Yatay Yonde traverse
 //*----------------------------------------------
 //! nextElementSibling ,previousElementSibling
+
+
+const s24 = document.querySelector("ul li:nth-child(3)")
+console.log(s24.previousElementSibling.textContent)
+console.log(s24.nextElementSibling.textContent)
